@@ -3,36 +3,52 @@ package calculator_action2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import io.appium.java_client.windows.WindowsDriver;
 
 public class Calc_act2 {
-	RemoteWebDriver driver;
+	WindowsDriver driver;
+//	@FindBy(name="Open Navigation")
+//	WebElement open_navigate;
 	
 	
 	
 	
-	public Calc_act2(RemoteWebDriver driver) {
+	
+	public Calc_act2(WindowsDriver driver) {
 		this.driver=driver;
 	}
 	
 	public void clicking_on_open_navigation() {
-		WebElement open_navigate= driver.findElement(By.name("Open Navigation"));
+		WebElement open_navigate= driver.findElementByAccessibilityId("TogglePaneButton");
+		String str = open_navigate.getAttribute("Name");
+		System.out.println("clicking on " + str);
+				
+				//driver.findElementByName("Open Navigation");
 		open_navigate.click();
 	
 		
 	}
 	public void click_on_length() {
-		WebElement length= driver.findElement(By.name("Length Converter"));
+		WebElement length= driver.findElementByAccessibilityId("Length");
+		String str = length.getAttribute("Name");	
+		System.out.println("clicking on " + str);
+				//driver.findElementByName("Length Converter");
 		length.click();
 	}
 	
 	public void selecting_inputunit() {
-		WebElement input_unit = driver.findElement(By.name("Input unit"));
+		WebElement input_unit = driver.findElementByAccessibilityId("Units1");
+		String str = input_unit.getAttribute("Name");
+		System.out.println("clicking on " + str);
+				//driver.findElementByName("Input unit");
 		input_unit.click();
 	}
 	
 	
 	public void click_onslected_unit() {
-		WebElement  selectedunit= driver.findElement(By.name("Kilometers"));
+		WebElement  selectedunit= driver.findElementByName("Kilometers");
 		selectedunit.click();
 		
 	}
@@ -44,7 +60,8 @@ public class Calc_act2 {
 	}
 	
 	public void taking_outputunit_value() throws InterruptedException {
-		String str = driver.findElement(By.id("Convert from 1,00,000 Centimeters")).getAttribute("Name");
+		WebElement ele  = driver.findElementByAccessibilityId("Value2");
+		String str = ele.getAttribute("Name");
 		System.out.println(str);
 		Thread.sleep(4000);
 	}
