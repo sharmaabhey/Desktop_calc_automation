@@ -3,6 +3,7 @@ package calculator_action1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.windows.WindowsDriver;
 
 public class Calc_act1 {
@@ -17,7 +18,7 @@ public class Calc_act1 {
 	
 	
 	public void adding_numbers() throws Exception {
-		WebElement ele = driver.findElementByName("One");
+		MobileElement ele = (MobileElement) driver.findElementByName("One");
 				//driver.findElementByXPath("/*[@ClassName='Button'  and @ControlType='50000']");
 				//driver.findElement(By.name("One"));
 		ele.click();

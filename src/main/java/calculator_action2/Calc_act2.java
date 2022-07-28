@@ -67,12 +67,14 @@ public class Calc_act2 {
 	}
 	
 	public void againclick_on_opennavigation() {
-		WebElement again_click = driver.findElement(By.name("Open Navigation"));
+		WebElement again_click = driver.findElementByName("Open Navigation");
+				//driver.findElement(By.name("Open Navigation"));
 		again_click.click();
 	}
 	
 	public void click_on_standard() {
-		WebElement standard = driver.findElement(By.name("Standard Calculator"));
+		WebElement standard = driver.findElementByName("Standard Calculator");
+				//driver.findElement(By.name("Standard Calculator"));
 		standard.click();
 	}
 	
