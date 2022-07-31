@@ -6,7 +6,7 @@
       <class name="calc_test.calc_maintest">
         <methods>
           <include name="launch_applictaion"/>
-          <include name="calculator_actions"/>
+          <include name="calculator_actions" invocation-numbers="0"/>
           <include name="close_app"/>
         </methods>
       </class> <!-- calc_test.calc_maintest -->

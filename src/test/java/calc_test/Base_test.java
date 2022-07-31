@@ -21,6 +21,7 @@ public class Base_test {
 		capabilities.setCapability("platformName", "Windows");
 		capabilities.setCapability("deviceName", "WindowsPC");
 		capabilities.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+		//capabilities.setCapability("app", "C:\\Windows\\System32\\calc.exe");
 		// driver= new WindowsDriver(new URL("http://127.0.0.1:4723/"), capabilities);
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		driver = new WindowsDriver(new URL("http://127.0.0.1:4723/"), capabilities);

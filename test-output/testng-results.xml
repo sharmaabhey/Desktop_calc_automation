@@ -2,20 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-28T13:30:18 IST" name="Default suite" finished-at="2022-07-28T13:30:37 IST" duration-ms="18460">
+  <suite started-at="2022-07-31T00:38:54 IST" name="Default suite" finished-at="2022-07-31T00:39:21 IST" duration-ms="26316">
     <groups>
     </groups>
-    <test started-at="2022-07-28T13:30:18 IST" name="Default test" finished-at="2022-07-28T13:30:37 IST" duration-ms="18460">
+    <test started-at="2022-07-31T00:38:54 IST" name="Default test" finished-at="2022-07-31T00:39:21 IST" duration-ms="26316">
       <class name="calc_test.calc_maintest">
-        <test-method is-config="true" signature="launch_applictaion()[pri:0, instance:calc_test.calc_maintest@3246fb96]" started-at="2022-07-28T13:30:18 IST" name="launch_applictaion" finished-at="2022-07-28T13:30:21 IST" duration-ms="2282" status="PASS">
+        <test-method is-config="true" signature="launch_applictaion()[pri:0, instance:calc_test.calc_maintest@e7edb54]" started-at="2022-07-31T00:38:55 IST" name="launch_applictaion" finished-at="2022-07-31T00:38:57 IST" duration-ms="1384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch_applictaion -->
-        <test-method signature="calculator_actions()[pri:0, instance:calc_test.calc_maintest@3246fb96]" started-at="2022-07-28T13:30:21 IST" name="calculator_actions" finished-at="2022-07-28T13:30:37 IST" duration-ms="16113" status="PASS">
+        <test-method signature="calculator_actions(java.util.Map)[pri:0, instance:calc_test.calc_maintest@e7edb54]" started-at="2022-07-31T00:38:57 IST" name="calculator_actions" data-provider="calc_data_file" finished-at="2022-07-31T00:39:20 IST" duration-ms="23928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Choice=datecalculation, Length_num=null, Month2=null, Num2=null, Numofunit=null, Operation=null, Unit=null, Flag=Yes, Test_case=TC04, Num1=null, Date=31, Function=Date, Month=March, Year=2024}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calculator_actions -->
-        <test-method is-config="true" signature="close_app()[pri:0, instance:calc_test.calc_maintest@3246fb96]" started-at="2022-07-28T13:30:37 IST" name="close_app" finished-at="2022-07-28T13:30:37 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="close_app()[pri:0, instance:calc_test.calc_maintest@e7edb54]" started-at="2022-07-31T00:39:20 IST" name="close_app" finished-at="2022-07-31T00:39:21 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_app -->
